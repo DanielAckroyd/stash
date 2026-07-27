@@ -1,0 +1,4 @@
+theme = Catppuccin Macchiato
+background-blur = true
+background-opacity = 0.95
+font-family = "FiraCode Nerd Font Mono"

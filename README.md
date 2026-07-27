@@ -15,11 +15,13 @@ Personal config files, mirrored at their home-relative paths.
 | `.claude/settings.local.json` | Claude Code local permission allowlist |
 | `.claude/statusline.py` | Claude Code status line script |
 | `.claude/hooks/herdr-agent-state.sh` | Herdr agent-state hook |
+| `Library/Application Support/com.mitchellh.ghostty/config.ghostty` | Ghostty terminal settings |
 
 ## Deliberately excluded
 
 - `~/.config/gh/hosts.yml` — contains the GitHub OAuth token
 - `~/.config/zed/prompts/` — binary prompts-library database
+- Ghostty's `auto/theme.ghostty` — machine-managed automatic theme switch
 - `~/.zsh_history`, caches, session state
 
 ## Usage
