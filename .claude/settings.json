@@ -1,0 +1,41 @@
+{
+  "agentPushNotifEnabled": true,
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "pgrep -f \"caffeinate -s -w $PPID\" >/dev/null || (caffeinate -s -w $PPID >/dev/null 2>&1 </dev/null &)",
+            "type": "command"
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "command": "bash '/Users/daniel.ackroyd/.claude/hooks/herdr-agent-state.sh' session",
+            "timeout": 10,
+            "type": "command"
+          }
+        ],
+        "matcher": "*"
+      }
+    ]
+  },
+  "inputNeededNotifEnabled": true,
+  "model": "claude-fable-5[1m]",
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "remoteControlAtStartup": true,
+  "statusLine": {
+    "command": "python3 /Users/daniel.ackroyd/.claude/statusline.py",
+    "refreshInterval": 5000,
+    "type": "command"
+  },
+  "theme": "dark"
+}

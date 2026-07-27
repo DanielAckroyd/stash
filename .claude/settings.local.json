@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude --version)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(claude mcp *)",
+      "Bash(echo \"=== exit: $? ===\")"
+    ]
+  }
+}
